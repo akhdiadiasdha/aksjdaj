@@ -14,8 +14,8 @@ better corner and more by vyxon
 ]]--             |
 
 --- FLUENT PLUS SETTINGS ---
-local Show_Button = false -- Shows the button for toggle fluent ui manually. If "false", works only on mobile, if "true", works everytime.
-local Button_Icon = "rbxassetid://94452522938352" -- Icon of the button for toggle fluent ui
+local Show_Button = true -- Shows the button for toggle fluent ui manually. If "false", works only on mobile, if "true", works everytime.
+local Button_Icon = "rbxassetid://135000736708602" -- Icon of the button for toggle fluent ui
 ----------------------------
 
 local Lighting = game:GetService("Lighting")
@@ -47,10 +47,52 @@ local ProtectGui = protectgui or (syn and syn.protect_gui) or function() end
 
 local Themes = {
 	Names = {
+		"PurpleGalaxy",
 		"BlueWhite",
 		"RedWhite",
 		"VYXON2",
 		"VYXON",
+	},
+	PurpleGalaxy = {
+		Name = "PurpleGalaxy",
+		Accent = Color3.fromRGB(180, 0, 255), -- Neon purple accent
+		AcrylicMain = Color3.fromRGB(10, 5, 20), -- Almost black space base
+		AcrylicBorder = Color3.fromRGB(90, 0, 130), -- Dim purple edges
+		AcrylicGradient = ColorSequence.new({
+			ColorSequenceKeypoint.new(0, Color3.fromRGB(10, 5, 20)), -- Start: deep black
+			ColorSequenceKeypoint.new(0.5, Color3.fromRGB(40, 0, 60)), -- Mid: purple mist
+			ColorSequenceKeypoint.new(1, Color3.fromRGB(90, 0, 150))  -- End: vibrant nebula purple
+		}),
+		AcrylicNoise = 0.85,
+		TitleBarLine = Color3.fromRGB(255, 255, 255), -- Purple bar detail
+		Tab = Color3.fromRGB(230, 220, 255), -- Subtle fogged lavender
+		Element = Color3.fromRGB(255, 255, 255), -- White UI element base
+		ElementBorder = Color3.fromRGB(180, 120, 255), -- Soft glow border
+		InElementBorder = Color3.fromRGB(140, 80, 200), -- Inner galaxy fade
+		ElementTransparency = 1,
+		ToggleSlider = Color3.fromRGB(210, 200, 255), -- Light purple slider rail
+		ToggleToggled = Color3.fromRGB(110, 0, 180), -- Active toggle (nebula)
+		SliderRail = Color3.fromRGB(220, 210, 255),
+		DropdownFrame = Color3.fromRGB(250, 245, 255),
+		DropdownHolder = Color3.fromRGB(20, 10, 35), -- Galaxy backdrop
+		DropdownBorder = Color3.fromRGB(160, 100, 255),
+		DropdownOption = Color3.fromRGB(230, 220, 255),
+		Keybind = Color3.fromRGB(255, 255, 255),
+		Input = Color3.fromRGB(240, 235, 255),
+		InputFocused = Color3.fromRGB(60, 0, 100), -- Strong purple focus
+		InputIndicator = Color3.fromRGB(200, 0, 255),
+		Dialog = Color3.fromRGB(25, 10, 40),
+		DialogHolder = Color3.fromRGB(15, 5, 25),
+		DialogHolderLine = Color3.fromRGB(150, 0, 240),
+		DialogButton = Color3.fromRGB(190, 0, 255),
+		DialogButtonBorder = Color3.fromRGB(255, 255, 255),
+		DialogBorder = Color3.fromRGB(255, 255, 255),
+		DialogInput = Color3.fromRGB(245, 235, 255),
+		DialogInputLine = Color3.fromRGB(200, 0, 255),
+		Text = Color3.fromRGB(255, 255, 255), -- Bright for readability
+		SubText = Color3.fromRGB(200, 180, 255), -- Soft for sub info
+		Hover = Color3.fromRGB(220, 0, 255), -- Glow hover
+		HoverChange = 0.1,
 	},
 	BlueWhite = {
 		Name = "BlueWhite",
@@ -5820,7 +5862,7 @@ local MinimizeButton = New("TextButton", {
 	}),
 	New("ImageLabel", {
 		Image = Mobile and Button_Icon or "rbxassetid://10734897102" or "",
-		Size = UDim2.new(1.25, 0, 1.25, 0),
+		Size = UDim2.new(1.4, 0, 1.4, 0),
 		BackgroundTransparency = 1,
 	}, {
 		New("UIAspectRatioConstraint", {
