@@ -81,6 +81,7 @@ local Themes = {
 		Input = Color3.fromRGB(240, 235, 255),
 		InputFocused = Color3.fromRGB(60, 0, 100), -- Strong purple focus
 		InputIndicator = Color3.fromRGB(200, 0, 255),
+		InputIndicatorFocus = Color3.fromRGB(255, 255, 255),
 		Dialog = Color3.fromRGB(25, 10, 40),
 		DialogHolder = Color3.fromRGB(15, 5, 25),
 		DialogHolderLine = Color3.fromRGB(150, 0, 240),
