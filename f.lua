@@ -47,8 +47,8 @@ local ProtectGui = protectgui or (syn and syn.protect_gui) or function() end
 
 local Themes = {
 	Names = {
-		"Vyxon_BlueWhite",
-		"Vyxon_RedWhite",
+		"BlueWhite",
+		"RedWhite",
 		"VYXON2",
 		"VYXON",
 	},
@@ -90,7 +90,7 @@ local Themes = {
 		HoverChange = 0.07,
 	},
 	RedWhite = {
-		Name = "Vyxon_RedWhite",
+		Name = "RedWhite",
 		Accent = Color3.fromRGB(220, 20, 60), -- Crimson/Red
 		AcrylicMain = Color3.fromRGB(25, 25, 25), -- Dark red base
 		AcrylicBorder = Color3.fromRGB(55, 0, 0), -- Darker red border
