@@ -47,11 +47,53 @@ local ProtectGui = protectgui or (syn and syn.protect_gui) or function() end
 
 local Themes = {
 	Names = {
+		"PinkNova",
 		"PurpleGalaxy",
 		"BlueWhite",
 		"RedWhite",
 		"VYXON2",
 		"VYXON",
+	},
+	PinkNova = {
+		Name = "PinkNova",
+		Accent = Color3.fromRGB(255, 80, 150), -- Bright pink accent
+		AcrylicMain = Color3.fromRGB(25, 10, 20), -- Deep rose black base
+		AcrylicBorder = Color3.fromRGB(140, 30, 90), -- Dim magenta edges
+		AcrylicGradient = ColorSequence.new({
+			ColorSequenceKeypoint.new(0, Color3.fromRGB(25, 10, 20)), -- Start: dark space pink
+			ColorSequenceKeypoint.new(0.5, Color3.fromRGB(80, 10, 60)), -- Mid: dusty pink clouds
+			ColorSequenceKeypoint.new(1, Color3.fromRGB(160, 30, 100)) -- End: bright galactic pink
+		}),
+		AcrylicNoise = 0.8,
+		TitleBarLine = Color3.fromRGB(255, 200, 230), -- Light pink detail
+		Tab = Color3.fromRGB(255, 225, 240), -- Soft pastel tab
+		Element = Color3.fromRGB(255, 245, 250), -- Slight pink white
+		ElementBorder = Color3.fromRGB(255, 170, 220), -- Pink aura border
+		InElementBorder = Color3.fromRGB(200, 120, 180), -- Deeper inner border
+		ElementTransparency = 1,
+		ToggleSlider = Color3.fromRGB(255, 215, 235), -- Light pastel slider
+		ToggleToggled = Color3.fromRGB(255, 100, 180), -- Neon toggle color
+		SliderRail = Color3.fromRGB(255, 230, 245),
+		DropdownFrame = Color3.fromRGB(255, 240, 250),
+		DropdownHolder = Color3.fromRGB(35, 15, 25), -- Deep galaxy pink
+		DropdownBorder = Color3.fromRGB(255, 140, 200),
+		DropdownOption = Color3.fromRGB(255, 225, 240),
+		Keybind = Color3.fromRGB(255, 245, 250),
+		Input = Color3.fromRGB(255, 240, 250),
+		InputFocused = Color3.fromRGB(120, 30, 90), -- Strong deep pink
+		InputIndicator = Color3.fromRGB(255, 100, 200),
+		Dialog = Color3.fromRGB(40, 15, 35),
+		DialogHolder = Color3.fromRGB(30, 10, 25),
+		DialogHolderLine = Color3.fromRGB(255, 90, 180),
+		DialogButton = Color3.fromRGB(255, 100, 200),
+		DialogButtonBorder = Color3.fromRGB(255, 240, 250),
+		DialogBorder = Color3.fromRGB(255, 255, 255),
+		DialogInput = Color3.fromRGB(255, 240, 250),
+		DialogInputLine = Color3.fromRGB(255, 80, 170),
+		Text = Color3.fromRGB(255, 255, 255),
+		SubText = Color3.fromRGB(255, 210, 230),
+		Hover = Color3.fromRGB(255, 120, 200),
+		HoverChange = 0.1,
 	},
 	PurpleGalaxy = {
 		Name = "PurpleGalaxy",
