@@ -83,6 +83,7 @@ local Themes = {
 		Input = Color3.fromRGB(15, 15, 15), -- Dark grey input field
 		InputFocused = Color3.fromRGB(0, 255, 255), -- Cyan focus on input field
 		InputIndicator = Color3.fromRGB(0, 255, 255), -- Glowing cyan indicator
+		InputIndicatorFocus = Color3.fromRGB(255, 255, 255), -- Optional: white when focused
 		Dialog = Color3.fromRGB(2, 2, 2), -- Almost pure black dialog background
 		DialogHolder = Color3.fromRGB(5, 5, 5), -- Slightly lighter dialog holder
 		DialogHolderLine = Color3.fromRGB(0, 255, 255), -- Cyan line in dialog holder
