@@ -47,12 +47,54 @@ local ProtectGui = protectgui or (syn and syn.protect_gui) or function() end
 
 local Themes = {
 	Names = {
+		"DeepDark",
 		"PinkNova",
 		"PurpleGalaxy",
 		"BlueWhite",
 		"RedWhite",
 		"VYXON2",
 		"VYXON",
+	},
+	DeepDark = {
+		Name = "DeepDark",
+		Accent = Color3.fromRGB(0, 255, 255), -- Cyan accent for a striking contrast
+		AcrylicMain = Color3.fromRGB(5, 5, 5), -- Very dark blackish background
+		AcrylicBorder = Color3.fromRGB(35, 35, 35), -- Slightly lighter border
+		AcrylicGradient = ColorSequence.new({
+			ColorSequenceKeypoint.new(0, Color3.fromRGB(5, 5, 5)), -- Darkest start
+			ColorSequenceKeypoint.new(0.5, Color3.fromRGB(15, 15, 15)), -- Mid: deep charcoal
+			ColorSequenceKeypoint.new(1, Color3.fromRGB(35, 35, 35)) -- End: dark grey
+		}),
+		AcrylicNoise = 0.85, -- Increased noise to add texture to the background
+		TitleBarLine = Color3.fromRGB(0, 255, 255), -- Cyan title bar line for glowing effect
+		Tab = Color3.fromRGB(10, 10, 10), -- Nearly pure black tab
+		Element = Color3.fromRGB(15, 15, 15), -- Very dark elements with a hint of grey
+		ElementBorder = Color3.fromRGB(0, 255, 255), -- Cyan borders for contrast
+		InElementBorder = Color3.fromRGB(0, 128, 128), -- Dark cyan inner border
+		ElementTransparency = 1, -- Solid elements for focus
+		ToggleSlider = Color3.fromRGB(0, 255, 255), -- Cyan slider rail
+		ToggleToggled = Color3.fromRGB(10, 10, 10), -- Dark background for toggles
+		SliderRail = Color3.fromRGB(20, 20, 20), -- Very dark grey rail
+		DropdownFrame = Color3.fromRGB(5, 5, 5), -- Darkest dropdown background
+		DropdownHolder = Color3.fromRGB(10, 10, 10), -- Slightly lighter dark background
+		DropdownBorder = Color3.fromRGB(0, 255, 255), -- Cyan dropdown border
+		DropdownOption = Color3.fromRGB(0, 255, 255), -- Cyan text for dropdown options
+		Keybind = Color3.fromRGB(255, 255, 255), -- White keybinds for contrast
+		Input = Color3.fromRGB(15, 15, 15), -- Dark grey input field
+		InputFocused = Color3.fromRGB(0, 255, 255), -- Cyan focus on input field
+		InputIndicator = Color3.fromRGB(0, 255, 255), -- Glowing cyan indicator
+		Dialog = Color3.fromRGB(2, 2, 2), -- Almost pure black dialog background
+		DialogHolder = Color3.fromRGB(5, 5, 5), -- Slightly lighter dialog holder
+		DialogHolderLine = Color3.fromRGB(0, 255, 255), -- Cyan line in dialog holder
+		DialogButton = Color3.fromRGB(0, 255, 255), -- Cyan button for visibility
+		DialogButtonBorder = Color3.fromRGB(0, 128, 128), -- Dark cyan button border
+		DialogBorder = Color3.fromRGB(255, 255, 255), -- White dialog border for clarity
+		DialogInput = Color3.fromRGB(10, 10, 10), -- Dark input field for dialog
+		DialogInputLine = Color3.fromRGB(0, 255, 255), -- Cyan line highlight in dialog input
+		Text = Color3.fromRGB(255, 255, 255), -- Bright white text for legibility
+		SubText = Color3.fromRGB(150, 150, 150), -- Light grey subtext for less emphasis
+		Hover = Color3.fromRGB(0, 255, 255), -- Hover effect in cyan
+		HoverChange = 0.15, -- Smooth hover transition with slight darken
 	},
 	PinkNova = {
 		Name = "PinkNova",
