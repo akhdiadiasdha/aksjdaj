@@ -84,6 +84,7 @@ local Themes = {
 			Input = Color3.fromRGB(15, 15, 15),
 			InputFocused = Color3.fromRGB(170, 0, 255),
 			InputIndicator = Color3.fromRGB(170, 0, 255),
+			InputIndicatorFocus = Color3.fromRGB(255, 255, 255),
 			Dialog = Color3.fromRGB(2, 2, 2),
 			DialogHolder = Color3.fromRGB(5, 5, 5),
 			DialogHolderLine = Color3.fromRGB(170, 0, 255),
