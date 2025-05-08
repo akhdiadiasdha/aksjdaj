@@ -47,6 +47,7 @@ local ProtectGui = protectgui or (syn and syn.protect_gui) or function() end
 
 local Themes = {
 	Names = {
+		"DarkWhite",
 		"DeepDark2",
 		"DeepDark",
 		"PinkNova",
@@ -56,6 +57,47 @@ local Themes = {
 		"VYXON2",
 		"VYXON",
 	},
+	DarkWhite = {
+			Name = "DarkWhite",
+			Accent = Color3.fromRGB(255, 255, 255), -- White accent
+			AcrylicMain = Color3.fromRGB(5, 5, 5),
+			AcrylicBorder = Color3.fromRGB(25, 25, 25),
+			AcrylicGradient = ColorSequence.new({
+				ColorSequenceKeypoint.new(0, Color3.fromRGB(5, 5, 5)),
+				ColorSequenceKeypoint.new(0.5, Color3.fromRGB(15, 15, 15)),
+				ColorSequenceKeypoint.new(1, Color3.fromRGB(25, 25, 25))
+			}),
+			AcrylicNoise = 0.85,
+			TitleBarLine = Color3.fromRGB(255, 255, 255), -- White title bar line
+			Tab = Color3.fromRGB(10, 10, 10),
+			Element = Color3.fromRGB(15, 15, 15),
+			ElementBorder = Color3.fromRGB(255, 255, 255), -- White border
+			InElementBorder = Color3.fromRGB(80, 80, 80), -- Mid gray inner border
+			ElementTransparency = 1,
+			ToggleSlider = Color3.fromRGB(255, 255, 255), -- White slider rail
+			ToggleToggled = Color3.fromRGB(10, 10, 10),
+			SliderRail = Color3.fromRGB(30, 30, 30),
+			DropdownFrame = Color3.fromRGB(5, 5, 5),
+			DropdownHolder = Color3.fromRGB(10, 10, 10),
+			DropdownBorder = Color3.fromRGB(255, 255, 255),
+			DropdownOption = Color3.fromRGB(255, 255, 255),
+			Keybind = Color3.fromRGB(255, 255, 255),
+			Input = Color3.fromRGB(15, 15, 15),
+			InputFocused = Color3.fromRGB(255, 255, 255),
+			InputIndicator = Color3.fromRGB(255, 255, 255),
+			Dialog = Color3.fromRGB(2, 2, 2),
+			DialogHolder = Color3.fromRGB(5, 5, 5),
+			DialogHolderLine = Color3.fromRGB(255, 255, 255),
+			DialogButton = Color3.fromRGB(255, 255, 255),
+			DialogButtonBorder = Color3.fromRGB(80, 80, 80),
+			DialogBorder = Color3.fromRGB(255, 255, 255),
+			DialogInput = Color3.fromRGB(10, 10, 10),
+			DialogInputLine = Color3.fromRGB(255, 255, 255),
+			Text = Color3.fromRGB(255, 255, 255),
+			SubText = Color3.fromRGB(180, 180, 180),
+			Hover = Color3.fromRGB(255, 255, 255),
+			HoverChange = 0.12,
+		},
 	DeepDark2 = {
 			Name = "DeepDark2",
 			Accent = Color3.fromRGB(170, 0, 255), -- Vibrant purple accent
