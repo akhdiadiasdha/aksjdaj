@@ -47,6 +47,7 @@ local ProtectGui = protectgui or (syn and syn.protect_gui) or function() end
 
 local Themes = {
 	Names = {
+		"PurpleBlue",
 		"DarkWhite",
 		"DeepDark2",
 		"DeepDark",
@@ -57,6 +58,47 @@ local Themes = {
 		"VYXON2",
 		"VYXON",
 	},
+	PurpleBlue = {
+			Name = "PurpleBlue",
+			Accent = Color3.fromRGB(138, 43, 226), -- Blue-violet
+			AcrylicMain = Color3.fromRGB(10, 10, 20),
+			AcrylicBorder = Color3.fromRGB(85, 0, 255), -- Vivid purple border
+			AcrylicGradient = ColorSequence.new({
+				ColorSequenceKeypoint.new(0, Color3.fromRGB(10, 10, 20)),
+				ColorSequenceKeypoint.new(0.5, Color3.fromRGB(35, 0, 65)),
+				ColorSequenceKeypoint.new(1, Color3.fromRGB(0, 0, 40))
+			}),
+			AcrylicNoise = 0.75,
+			TitleBarLine = Color3.fromRGB(138, 43, 226),
+			Tab = Color3.fromRGB(15, 15, 30),
+			Element = Color3.fromRGB(20, 20, 40),
+			ElementBorder = Color3.fromRGB(85, 0, 255),
+			InElementBorder = Color3.fromRGB(60, 60, 100),
+			ElementTransparency = 1,
+			ToggleSlider = Color3.fromRGB(138, 43, 226),
+			ToggleToggled = Color3.fromRGB(25, 0, 50),
+			SliderRail = Color3.fromRGB(45, 45, 75),
+			DropdownFrame = Color3.fromRGB(12, 12, 24),
+			DropdownHolder = Color3.fromRGB(20, 20, 35),
+			DropdownBorder = Color3.fromRGB(85, 0, 255),
+			DropdownOption = Color3.fromRGB(200, 200, 255),
+			Keybind = Color3.fromRGB(180, 160, 255),
+			Input = Color3.fromRGB(25, 25, 45),
+			InputFocused = Color3.fromRGB(170, 130, 255),
+			InputIndicator = Color3.fromRGB(138, 43, 226),
+			Dialog = Color3.fromRGB(10, 10, 20),
+			DialogHolder = Color3.fromRGB(20, 10, 30),
+			DialogHolderLine = Color3.fromRGB(138, 43, 226),
+			DialogButton = Color3.fromRGB(200, 180, 255),
+			DialogButtonBorder = Color3.fromRGB(85, 0, 255),
+			DialogBorder = Color3.fromRGB(138, 43, 226),
+			DialogInput = Color3.fromRGB(20, 20, 35),
+			DialogInputLine = Color3.fromRGB(138, 43, 226),
+			Text = Color3.fromRGB(220, 200, 255),
+			SubText = Color3.fromRGB(160, 140, 200),
+			Hover = Color3.fromRGB(200, 140, 255),
+			HoverChange = 0.15,
+		},
 	DarkWhite = {
 		Name = "DarkWhite",
 		Accent = Color3.fromRGB(255, 255, 255), -- White accent
