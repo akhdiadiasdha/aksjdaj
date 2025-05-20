@@ -1,3 +1,76 @@
+-- nothing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---@diagnostic disable: lowercase-global, undefined-global, undefined-field
 
 
@@ -15,7 +88,7 @@ better corner and more by vyxon
 
 --- FLUENT PLUS SETTINGS ---
 local Show_Button = true -- Shows the button for toggle fluent ui manually. If "false", works only on mobile, if "true", works everytime.
-local Button_Icon = "rbxassetid://87077599107563" -- Icon of the button for toggle fluent ui
+local Button_Icon = "rbxassetid://135000736708602" -- Icon of the button for toggle fluent ui
 ----------------------------
 
 local Lighting = game:GetService("Lighting")
@@ -47,6 +120,7 @@ local ProtectGui = protectgui or (syn and syn.protect_gui) or function() end
 
 local Themes = {
 	Names = {
+		"SpeedHubX",
 		"PurpleBlue",
 		"DarkWhite",
 		"DeepDark2",
@@ -58,6 +132,47 @@ local Themes = {
 		"VYXON2",
 		"VYXON",
 	},
+	SpeedHubX = {
+			Name = "SpeedHubX",
+			Accent = Color3.fromRGB(255, 0, 0), -- Bright Red accent
+			AcrylicMain = Color3.fromRGB(10, 10, 10), -- Smooth dark gray background
+			AcrylicBorder = Color3.fromRGB(70, 70, 70), -- Soft border gray
+			AcrylicGradient = ColorSequence.new({
+				ColorSequenceKeypoint.new(0, Color3.fromRGB(30, 30, 30)),
+				ColorSequenceKeypoint.new(1, Color3.fromRGB(30, 30, 30)),
+			}), -- Subtle dark to lighter gray
+			AcrylicNoise = 1, -- Very low noise for fluent smoothness
+			TitleBarLine = Color3.fromRGB(45, 45, 45), -- Red title bar line
+			Tab = Color3.fromRGB(45, 45, 45), -- Darker gray tab background
+			Element = Color3.fromRGB(85, 0, 0), -- Smooth element color
+			ElementBorder = Color3.fromRGB(255, 0, 0), -- Red border
+			InElementBorder = Color3.fromRGB(180, 0, 0), -- Darker red inner border
+			ElementTransparency = 0.3, -- Slight transparency for fluent feel
+			ToggleSlider = Color3.fromRGB(255, 0, 0), -- Red toggle slider
+			ToggleToggled = Color3.fromRGB(255, 255, 255), -- Red when toggled ON
+			SliderRail = Color3.fromRGB(60, 60, 60), -- Smooth light gray rail
+			DropdownFrame = Color3.fromRGB(85, 0, 0), -- Dropdown background
+			DropdownHolder = Color3.fromRGB(65, 0, 0), -- Holder background
+			DropdownBorder = Color3.fromRGB(85, 0, 0), -- White dropdown border
+			DropdownOption = Color3.fromRGB(85, 0, 0), -- White dropdown text
+			Keybind = Color3.fromRGB(255, 255, 255), -- White keybind text
+			Input = Color3.fromRGB(0, 0, 0), -- Gray input field
+			InputFocused = Color3.fromRGB(54, 54, 54), -- Red input focus
+			InputIndicator = Color3.fromRGB(255, 0, 0), -- Red input indicator
+			InputIndicatorFocus = Color3.fromRGB(255, 0, 0),
+			Dialog = Color3.fromRGB(40, 40, 40), -- Dark gray dialog
+			DialogHolder = Color3.fromRGB(50, 50, 50), -- Dialog holder
+			DialogHolderLine = Color3.fromRGB(255, 0, 0), -- Red holder line
+			DialogButton = Color3.fromRGB(255, 0, 0), -- Red button
+			DialogButtonBorder = Color3.fromRGB(180, 0, 0), -- Darker red button border
+			DialogBorder = Color3.fromRGB(255, 255, 255), -- White dialog border
+			DialogInput = Color3.fromRGB(72, 72, 72), -- Gray dialog input
+			DialogInputLine = Color3.fromRGB(255, 0, 0), -- Red input line
+			Text = Color3.fromRGB(255, 255, 255), -- Bright white text
+			SubText = Color3.fromRGB(180, 180, 180), -- Light grey subtext
+			Hover = Color3.fromRGB(255, 50, 50), -- Lighter red on hover
+			HoverChange = 0.12, -- Smooth hover transition
+		},
 	PurpleBlue = {
 			Name = "PurpleBlue",
 			Accent = Color3.fromRGB(138, 43, 226), -- Blue-violet
