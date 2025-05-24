@@ -6887,10 +6887,10 @@ do
 
 		for idx, option in next, SaveManager.Options do
 			if not self.Parser[option.Type] then
-				return
+				continue
 			end
 			if self.Ignore[idx] then
-				return
+				continue
 			end
 
 			table.insert(data.objects, self.Parser[option.Type].Save(idx, option))
