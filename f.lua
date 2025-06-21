@@ -82,13 +82,12 @@ dsc.gg/hydrahub  |   31.12 - fixed all themes, more info in discord.
 '                |   30.12 - added themes.
 
 
-// Chganged uiconrer (0, 8) -> 0, 30
 better corner and more by vyxon
 ]]--             |
 
 --- FLUENT PLUS SETTINGS ---
 local Show_Button = true -- Shows the button for toggle fluent ui manually. If "false", works only on mobile, if "true", works everytime.
-local Button_Icon = "rbxassetid://76674584031406" -- Icon of the button for toggle fluent ui
+local Button_Icon = "rbxassetid://71341238890911" -- Icon of the button for toggle fluent ui
 ----------------------------
 
 local Lighting = game:GetService("Lighting")
