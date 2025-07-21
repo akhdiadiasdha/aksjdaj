@@ -14,7 +14,7 @@ better corner and more by vyxon
 
 --- FLUENT PLUS SETTINGS ---
 local Show_Button = true -- Shows the button for toggle fluent ui manually. If "false", works only on mobile, if "true", works everytime.
-local Button_Icon = "rbxassetid://117153053780578" -- Icon of the button for toggle fluent ui
+local Button_Icon = "rbxassetid://70622850448692" -- Icon of the button for toggle fluent ui
 ----------------------------
 
 local Lighting = game:GetService("Lighting")
